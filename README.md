@@ -34,10 +34,10 @@ Start by generating a `.csv` file using python and then upload it to [Edge Impul
 
 The directory structure should look like the one used in the following tutorial:
 main folder/
-     source
-     CMakeLists.txt
-     pico_sdk_import.cmake
-     edge-impulse-sdk
-     model-parameters
-     tflite-model/
+     .source
+     .CMakeLists.txt
+     .pico_sdk_import.cmake
+     .edge-impulse-sdk
+     .model-parameters
+     .tflite-model/
 
