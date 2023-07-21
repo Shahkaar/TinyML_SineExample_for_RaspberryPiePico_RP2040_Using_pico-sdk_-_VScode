@@ -39,3 +39,19 @@ complete documentation is also given in the website:
 you can also find multiple tutorials online. 
 
 I will be providing the complete file sets with the model i have trained but you can visit the link [4] to train your own model by first  generating a csv file for the values of pi from 0-pi. I have used python for this purpose. then upload your csv file to link [4] and understand the tutorial in link [6] and generate your model the only changes you will be needing is the source file i have provided. If you want to use the same model as mine then simple copy the files in a known location. Open that folder in VS_code and build the project after that copy the .uf2 file to your pico and open the serial monitor. Any software for serial monitoring can be used i used arduino. but before using arduino make sure you have installed the pico board through boards manager the following link may help. Set the baud rate to 115200 (9600 can also work). The serial monitor will show the generated value from 0-pi as "feature" then the predicted value as "value" the same value is saved in an array with the name "y" and then the mapped pwm as "pwm". note that the range for the pwm of pico microcontroller is from 0-65535.
+
+NOTE: You can find the model i use at:
+https://github.com/Shahkaar/Edge-impluse-sinewave-model
+
+I have made few changes in the file edge-impulse-sdk/porting/raspberry/ei_classifier_porting.cpp. so if you are using my trained model with this source code everything should hopefully work
+
+the directory structure should look like the one used in the followig tutorial:
+https://www.youtube.com/watch?v=BrRKcEQxrv4&t=744s
+
+main folder/
+     source
+     CMakeLists.txt
+     pico_sdk_import.cmake
+     edge-impulse-sdk
+     model-parameters
+     tflite-model
