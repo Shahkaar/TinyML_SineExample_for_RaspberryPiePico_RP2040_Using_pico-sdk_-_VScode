@@ -26,7 +26,11 @@ Now there are three things you can do:
 2. Build your own model.
 3. Upload a tensorflowlite model to edge-impulse
 # Using My Model files
-You just need to download the files from [TinyML_SineExample_for_Raspberry-Pi-Pico_RP2040_Using_pico-sdk_-_VScode](https://github.com/Shahkaar/TinyML_SineExample_for_RaspberryPiePico_RP2040_Using_pico-sdk_-_VScode) and from [Edge-impluse-sinewave-model](https://github.com/Shahkaar/Edge-impluse-sinewave-model) and do a bit file formating for which you can follow this video [Machine Learning Inference on Raspberry Pico 2040 via Edge Impulse](https://www.youtube.com/watch?v=BrRKcEQxrv4&t=744s). Once your files are in correct formate. Open the folder that has all your files in Visual Studio Code. Generate the build folder and build the project. The copy the '.uf2' 
+You just need to download the files from [TinyML_SineExample_for_Raspberry-Pi-Pico_RP2040_Using_pico-sdk_-_VScode](https://github.com/Shahkaar/TinyML_SineExample_for_RaspberryPiePico_RP2040_Using_pico-sdk_-_VScode) and from [Edge-impluse-sinewave-model](https://github.com/Shahkaar/Edge-impluse-sinewave-model) and do a bit file formating for which you can follow this video [Machine Learning Inference on Raspberry Pico 2040 via Edge Impulse](https://www.youtube.com/watch?v=BrRKcEQxrv4&t=744s). Once your files are in correct formate. Also set up your Arduino IDE to work with raspberry pi pico like [this](https://www.youtube.com/watch?v=IZKpCz6LEdg). Open the folder that has all your files in Visual Studio Code. Generate the build folder and build the project. The copy the `.uf2` file to you Raspberry pi pico. Open the Arduino IDE Serial monitor and you will be see the values from 0-pi as `features` then the predicted output as `value`. The same set of values are saved in the array `y` and then those values are mapped to the pico's PWM range of 0-65535.
+After all the prediction are done (A total of 200 iteration) the Built-in LED of the pico will show half sine wave.
+
+# Building Your Own Model
+Start by generating a `.csv` file using python and then upload it to [Edge Impulse]
 
 [7] https://www.hackster.io/dmitrywat/machine-learning-inference-on-raspberry-pico-2040-e6e874
 
