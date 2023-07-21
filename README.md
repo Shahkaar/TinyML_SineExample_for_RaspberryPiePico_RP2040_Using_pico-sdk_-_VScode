@@ -17,21 +17,16 @@
 To start with this project the most important thing to notice is that your visual studio code is properly configured and you have all the 
 dependencies installed for pico-sdk. Follow [How to Set Up Raspberry Pi Pico C/C++ Toolchain on Windows with VS Code](https://shawnhymel.com/2096/how-to-set-up-raspberry-pi-pico-c-c-toolchain-on-windows-with-vs-code/)
 .After this build your first project and blink an LED by following [Intro to Raspberry Pi Pico and RP2040 - C/C++ Part 1: VS Code and Blink | Digi-Key Electronics](https://www.youtube.com/watch?v=B5rQSoOmR5w).Make sure the version of the softwares are the same and correct paths are added in the system environment. The cmake version I used is 1.6 because in latest version the build buttons disappears. Make sure that the directories are made in the correct location and same name as the link because they are used in the paths. 
-After that you are successfully able to build and upload your blink project to raspberry pi pico.
+After this you will be able to build and upload your blink project to raspberry pi pico.
 
-# Model Training 
-
-Now its time to train the model using edge impulse:
-
-[4] https://edgeimpulse.com/
-
-complete documentation is also given in the website:
-
-[5] https://docs.edgeimpulse.com/docs/
-
-[6] https://www.youtube.com/watch?v=iCmlKyAp8eQ
-
-you can also find multiple tutorials online. 
+# Model Training
+The model is trained and tested using [Edge Impulse](https://edgeimpulse.com/). For learning more about it go to [Arduino Machine Learning Tutorial: Introduction to TinyML with Wio Terminal](https://www.youtube.com/watch?v=iCmlKyAp8eQ) and you can also check out there documentation too[Documentation Edge-Impulse](https://docs.edgeimpulse.com/docs/) you can also find multiple tutorials online.
+Now there are three things you can do:
+1. Use the model I trained.
+2. Build your own model.
+3. Upload a tensorflowlite model to edge-impulse
+# Using My Model files
+You just need to download the files from [TinyML_SineExample_for_Raspberry-Pi-Pico_RP2040_Using_pico-sdk_-_VScode](https://github.com/Shahkaar/TinyML_SineExample_for_RaspberryPiePico_RP2040_Using_pico-sdk_-_VScode) and from [Edge-impluse-sinewave-model](https://github.com/Shahkaar/Edge-impluse-sinewave-model) and do a bit file formating for which you can follow this video [Machine Learning Inference on Raspberry Pico 2040 via Edge Impulse](https://www.youtube.com/watch?v=BrRKcEQxrv4&t=744s). Once your files are in correct formate. Open the folder that has all your files in Visual Studio Code. Generate the build folder and build the project. The copy the '.uf2' 
 
 [7] https://www.hackster.io/dmitrywat/machine-learning-inference-on-raspberry-pico-2040-e6e874
 
