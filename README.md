@@ -33,7 +33,7 @@ After all the prediction are done (A total of 200 iteration) the Built-in LED of
 Start by generating a `.csv` file using python and then upload it to [Edge Impulse](https://edgeimpulse.com/). Select the C++ option in the `Deployment` tab and download the files. My `source` file and `CMakeList.txt` should be used if you are willing to use the pwm functionality of Raspberry pi pico. In case of errors cross check the `edge-impulse-sdk` with [Edge-impluse-sinewave-model](https://github.com/Shahkaar/Edge-impluse-sinewave-model). Hopefully things should work now. For the file formating follow [Machine Learning Inference on Raspberry Pico 2040 via Edge Impulse](https://www.youtube.com/watch?v=BrRKcEQxrv4&t=744s)
 
 The directory structure should look like the one used in the following tutorial:
-main folder
+main folder/
    * source
    * CMakeLists.txt
    * pico_sdk_import.cmake
